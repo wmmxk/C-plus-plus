@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-  int arr[2] = {1,2};
+  int arr[3] = {1,2,3};
 
   cout <<"\n";		
 		cout << "Adress of array: "
@@ -20,7 +20,9 @@ int main()
 							<< "Address of next block of memroy (element): "
 							<< &arr[0]+1<<"\n\n";
   
-		
+  cout << "Address of the 2nd element in the array: arr+1\n"
+			    << arr+1 << "\n\n";
+
  
   return 0;
 }
