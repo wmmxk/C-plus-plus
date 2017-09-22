@@ -1,0 +1,1 @@
+The wrapper.cpp and default.cpp is to show a member can be used as a default value of a member function but can be used actural parameter.
