@@ -1,32 +1,47 @@
-/*
-This code is to learn how to use GDB.
-source: https://www.cprogramming.com/gdb.html
+#include <cmath>
 
-*/
-#include<string>
-#include<iostream>
- 
 using namespace std;
- 
-long factorial(int n);
- 
-int main()
-{
-    int n(0);
-    cout <<"input a number ";			
-    cin>>n;
-    long val=factorial(n);
-			 cout<<"factorial is "<<val<< endl;
-    cin.get();
-    return 0;
+
+int ComputeFactorial(int number) {
+  int fact = 0;
+
+  for (int j = 1; j <= number; j++) {
+    fact = fact * j;
+  }
+
+  return fact;
 }
- 
-long factorial(int n)
-{
-    long result(1);
-    while(n--)
-    {
-        result*=n;
-    }
-    return result;
+
+double ComputeSeriesValue(double x, int n) {
+  double seriesValue = 0.0;
+  double xpow = 1;
+
+  for (int k = 0; k <= n; k++) {
+    seriesValue += xpow / ComputeFactorial(k);
+    xpow = xpow * x;
+  }
+
+  return seriesValue;
+}
+
+int main() {
+  cout << "This program is used to compute the value of the following series : " << endl;
+
+  cout << "(x^0)/0! + (x^1)/1! + (x^2)/2! + (x^3)/3! + (x^4)/4! + ........ + (x^n)/n! " << endl;
+
+  cout << "Please enter the value of x : " ;
+  
+  double x;
+  cin >> x;
+
+  int n;
+  cout << endl << "Please enter an integer value for n : " ;
+  cin >> n;
+  cout << endl;
+
+  double seriesValue = ComputeSeriesValue(x, n);
+  cout << "The value of the series for the values entered is " 
+	<< seriesValue << endl;
+
+  return 0;
 }
