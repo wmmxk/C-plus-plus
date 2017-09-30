@@ -1,0 +1,1 @@
+Xiaokang This code is to learn input arguments from command line to a c code
