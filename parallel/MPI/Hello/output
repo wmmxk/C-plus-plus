@@ -1,0 +1,10 @@
+==========================================
+SLURM_JOB_ID = 3890463
+SLURM_NODELIST = g8-[7,9,11,13]
+CUDA_VISIBLE_DEVICES = NoDevFiles
+==========================================
+Hello world from processor g8-13, rank 3 out of 4 processors
+Hello world from processor g8-11, rank 2 out of 4 processors
+Hello world from processor g8-7, rank 0 out of 4 processors
+Hello world from processor g8-9, rank 1 out of 4 processors
+

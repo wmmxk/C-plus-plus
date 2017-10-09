@@ -1,3 +1,9 @@
+/*
+	to compile the code run: mpicc -o Hello Hello.c
+
+	submit the job to the cluster
+	*
+	*/
 #include <mpi.h>
 #include <stdio.h>
 
