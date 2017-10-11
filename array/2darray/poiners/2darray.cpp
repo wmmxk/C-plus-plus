@@ -7,6 +7,8 @@ int main()
 
 int C[2][3] = {{2,3,4},{5,6,7}};
 
+cout << "&C:" << &C << endl;
+
 cout << "Print C: " << C <<endl;
 
 cout << "Print *C: " << *C << " C[0] " << C[0] << " &C[0] " << &C[0]<< endl;
