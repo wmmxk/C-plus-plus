@@ -15,18 +15,17 @@ int main(void)
     //int data[9][2]  = {{2,1}, {3,1}, {1,2},{4,2},{1,3},{3,3},{6,3},{2,4},{1,6}};
     int data[4][2] = { { 4,1 }, { 2,3 }, { 1,4 },{3,2} };
     //use an row_pointer to loop through the rows
-    for ( int ( *p )[2] = data ; p != data + 3; ++p ) 
+    for ( int ( *p )[2] = data ; p != data +4; ++p ) 
     {
      
-		for ( int (*p_i)[2] = data; p_i != data+3; ++p_i )
-		{
-            if ( **p == *(*p_i +1) && *(*p+1) == **p_i)
-			{
-				for ( int *q = *p; q != *p + 2; ++q  ) printf( "%d ", *q  );
-			//	 puts( ""  );
-			}
-
-		}
+							for ( int (*p_i)[2] = data; p_i != data+4; ++p_i )
+							{
+												if ( **p == *(*p_i +1) && *(*p+1) == **p_i)
+								{
+									for ( int *q = *p; q != *p + 2; ++q  ) printf( "%d", *q  );
+								 puts( ""  );
+								}
+							}
     }
 
     return 0;
