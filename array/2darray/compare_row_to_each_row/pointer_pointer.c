@@ -1,52 +1,71 @@
 /*
 	*This code is to compare a row to each row in a 2d array in an element wise way
-	* To practice: 
-	        pass an 2d array to a function. In fact, you just pass the address of the first element with the row_num and column_num
-									The signature of the fuction is type *. (replace type with a specifi type in a secific situation)
+Inputs: 
+     use pointer to pointer to generate a 2d array
+     use a pointer to slice a row from the array
 
-									When you call the function, you can pass &arr[0][0] or (type *) arr (This is to cast the row pointer to a regular pointer)
+operation:
+     compare the row to the rows in the array. If an identical row is found, return true, otherwise return false
 
 
 	*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
-bool  compare(int ** arr, int r_num, int c_num, int * one_row);
+
+int ** generate_array(int N, int int_max = 10);
+bool  compare(int ** arr, int r_num, int * one_row);
 
 int main()
 {
+		int N = 5;
+		int ** data = generate_array(N);
+		int * check_row = data[0];
+		bool exist = compare(data, 4, data[0]);
+		if (exist) 
+		{
+					printf("Found\n");
+		}
+		else
+		{
+					printf("Not found\n");
+		}
 
-int data[4][2] = { { 4,1 }, { 2,3 }, { 1,4 },{3,2} };
-int row[2] = {4,1};
-bool exist = compare(&data[0][0], 4, 2, row);
-if (exist) 
-{
-	printf("Found\n");
+
+		return 0;
 }
-else
-{
-	printf("Not found\n");
-e}
 
 
-return 0;
+
+
+int ** generate_array(int N, int int_max ) {
+		 int **arr = (int**)malloc(N * sizeof(int*));
+
+			for (int i = 0; i < N; i++) {
+			   	arr[i] = (int*) malloc(2 * sizeof(int));
+			}
+			for (int i = 0; i < N; i++) {
+							for (int j = 0; j < 2; j++) {
+										arr[i][0] = rand() % int_max;
+										arr[i][1] = rand() % int_max;
+				}
+			}
+
+			return arr;
 }
 
 
-bool compare(int ** arr, int r_num, int c_num, int * one_row)
+
+bool compare(int ** arr, int r_num, int * one_row)
 {
-		int i, j;
 	 bool res;
 
-		for (i=0; i < r_num; i++)
+		for (int i=0; i < r_num; i++)
 		{
 			 res = true;
-    for (j =0; j < c_num; j++)
-				{
-					res = res && (*(one_row+j) == arr[i][j] );
-				}
+				res = res && (*one_row == arr[i][0]) && (*(one_row+1) == arr[i][1]);
     if (res)  return res;
-
 		}
   return res;
 
