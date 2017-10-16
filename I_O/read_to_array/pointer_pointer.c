@@ -1,9 +1,10 @@
 // how to compile
 //    g++ -o row_pointer row_pointer.c
 // how to run:
-//    ./row_pointer 8   , 8 is the number of rows in the file
+//    ./pointer_pointer 8 data.txt  8 is the number of rows in the file
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void print(int **arr, int r_num);
 int main(int argc, char *argv[])
@@ -18,8 +19,12 @@ int main(int argc, char *argv[])
 
   i=0;
 
+		char file_path[100] = "./data/";
+  strcat(file_path, argv[2]);
+
+
   FILE *fin;
-  fin = fopen("./data/data.txt","r");
+  fin = fopen(file_path,"r");
   while (!feof(fin)) {
         fscanf(fin,"%d",&arr[i][j]);
         num++;
