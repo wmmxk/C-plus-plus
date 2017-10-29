@@ -1,0 +1,12 @@
+When to use inline
+1. In the definition of a class, to keep the interface clean, move even short function body out of the definition. But Use the inline keyword
+e.g.
+
+class S {
+ public:
+    int square(int s); 
+};
+
+inline int S::square(int s) // use inline prefix
+{
+}
