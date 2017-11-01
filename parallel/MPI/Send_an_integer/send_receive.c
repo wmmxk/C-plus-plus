@@ -1,10 +1,12 @@
 /* source: http://mpitutorial.com/tutorials/mpi-send-and-receive/
  * In this code, we assume two processes: the master process send an integer to the slave process
 
+How to compile
+mpicc send_receive.c
 
 How to run: 
 
-mpicc -np 2 ./send_receive
+mpirun -np 2 ./a.out
 */
 
 #include <mpi.h>
