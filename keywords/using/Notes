@@ -1,0 +1,3 @@
+using is to create an alis// You first saw such a usage in the book entitled Using the C++ Standard Template Libraries
+
+using Entry = std::pair<const Name, size_t>;
