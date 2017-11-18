@@ -67,7 +67,6 @@ int main() {
   cout << endl << "Please enter an integer value for n : " ;
   cin >> n;
   cout << endl;
-
   double seriesValue = ComputeSeriesValue(x, n);
   cout << "The value of the series for the values entered is " 
 	<< seriesValue << endl;
