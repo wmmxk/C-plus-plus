@@ -1,0 +1,12 @@
+Variables declared inside a function are called local variables as they have block scope. They are created at the point of definition and destroyed when the block is exited. Variables declared outside of a function 
+are called global variables. 
+
+A static global variable has a file scope and an extern global variable has a program scope
+
+
+In addition to scope and duration, variables have a third property: linkage.
+
+If extern linkage property is involved, there shoud be a line related to this in all the files related to this extern variables. So extern keyword is used in two ways: to declare a variable in one file; forward declare the variable (no initizliation) in another file.
+
+
+By default, non-const variables declared outside of a function are assumed to be external. However, const variables declared outside of a function are assumed to be internal.
