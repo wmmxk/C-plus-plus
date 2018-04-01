@@ -1,0 +1,3 @@
+Variables:
+
+VPATH: specifies a list of directories that make should search for all depedencies
