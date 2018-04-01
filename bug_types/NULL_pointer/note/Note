@@ -1,0 +1,6 @@
+0 is used a null value which means the pointer is not pointing at anything.
+So you can not assign an int value when dereferencing the null pointer.
+
+
+In C++11, a new keyword called nullptr is introduced. It is both a keyword and a rvalue constant,
+much like the boolean keywords true and false are.
