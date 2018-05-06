@@ -1,0 +1,1 @@
+When you run the executable, AddNumberClientShared, you need to add the path of your shared library to the LD_LIBRARy_PATH
