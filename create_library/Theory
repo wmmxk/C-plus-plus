@@ -1,0 +1,10 @@
+Linking: the process of looking up functions from libraries. It can happen either just after we compile the program ("static linking") or when we run the program ("dynamic linking").
+
+
+
+Archive files (.a)
+  Libraries meant to be embeded into executables during the Linking step
+
+Shared objects files (.so)
+
+  Libraries meant to be loaded when the exectuable starts running

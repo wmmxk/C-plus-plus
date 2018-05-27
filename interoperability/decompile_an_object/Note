@@ -1,0 +1,6 @@
+how to analyze:
+   g++ -c test.cpp    // compile the c++ code, generating object file
+   readelf -s test.o  // decompile the symbol table 
+                      // elf: executable and linkable file
+
+   c++filt _Z1fv      // demangle the name 

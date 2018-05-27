@@ -1,0 +1,10 @@
+1. C++ vs C
+
+In C, the symbol name is the same as the function name. This is possible because in C no two non-static functions can have the same name. 
+
+In C++, multiple functions can have the same name but different inputs and methods in different class can have the same name. It is not possiblee to simply use the function name as the symbol name. To solve that, C++ uses so-called name mangling, which transforms the function name and all the necessary information (like the number and size of the arguments) into some weired-looking string processed only by the compiler and linker.
+
+
+2. Declaration vs definition
+   Declared but undefined (Ndx = UND) functions are not mangled because it is provided at link or run time from another object file
+

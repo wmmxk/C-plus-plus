@@ -1,0 +1,13 @@
+1. compile the c code:
+   gcc -o hello hello.c
+
+
+2. Look into the binary and learn about sections:
+   objdump -s hello
+
+   .text is the program's actual code (binary assembly code)
+   .rodata is where some read-only data is stored (in this case, our string "Hello Xiaokang!")
+   .interp is the filename of the dynamic linker
+
+3. Look at some assembly
+   objdump -d ./hello
