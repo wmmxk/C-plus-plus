@@ -1,0 +1,23 @@
+
+1. Memory is a continuous chunk of binary digits (bits).
+
+Data type
+2. But when it comets to different data type, the memory is thought of chunks of specific size. e.g. A chunk of memory which are assigned to store an int is composed of 4 bytes, which is equal to 32 bits.
+
+
+The size of pointer is 32 bits if the code is compiled under 32 model. (You can compile 32bit code on 64 bit linux after you install releated libraries)
+
+We can use sizeof(type) to get how many bits does the data take.
+
+Conversion between datatype:
+3. if sizeof(typeA) != sizeof(typeB), you can not cast typeA to typeB. You might see warnings or errors. e.g. For a 32bit code, you can convert a pointer to an int.
+
+
+4. When you convert a pointer to an int in 32bit code, you might run into overflow.
+
+
+5. size_t: it is implementation-dependent unsigned type. It can be any of:    
+unsigned short, unsigned int, unsigned long and unsigned long long.    
+    
+If you look into the stddef.h file, you might see something like this:    
+typedef unsigned long size_t;   
