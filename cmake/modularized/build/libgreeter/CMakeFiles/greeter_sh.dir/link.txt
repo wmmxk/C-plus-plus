@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libgreeter_sh.so -o ../../output/lib/libgreeter_sh.so CMakeFiles/greeter_sh.dir/src/greeter.c.o 

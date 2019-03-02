@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libgreeter/includes/greeter.h
+
+/home/wxk/Git/C-plus-plus/cmake/modularized/libgreeter/src/greeter.c
+stdio.h
+-
+greeter.h
+/home/wxk/Git/C-plus-plus/cmake/modularized/libgreeter/src/greeter.h
+

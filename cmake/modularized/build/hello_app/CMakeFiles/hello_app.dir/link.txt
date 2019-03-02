@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/hello_app.dir/src/main.c.o  -o ../../output/bin/hello_app -Wl,-rpath,/home/wxk/Git/C-plus-plus/cmake/modularized/output/lib ../../output/lib/libgreeter_sh.so 
