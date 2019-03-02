@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wxk/Git/C-plus-plus/cmake/static_lib/Message.hpp
+iosfwd
+-
+string
+-
+
+/home/wxk/Git/C-plus-plus/cmake/static_lib/hello-world.cpp
+Message.hpp
+/home/wxk/Git/C-plus-plus/cmake/static_lib/Message.hpp
+cstdlib
+-
+iostream
+-
+

@@ -1,0 +1,4 @@
+/home/wxk/Git/C-plus-plus/cmake/static_lib/build/CMakeFiles/edit_cache.dir
+/home/wxk/Git/C-plus-plus/cmake/static_lib/build/CMakeFiles/rebuild_cache.dir
+/home/wxk/Git/C-plus-plus/cmake/static_lib/build/CMakeFiles/hello-world.dir
+/home/wxk/Git/C-plus-plus/cmake/static_lib/build/CMakeFiles/message.dir
