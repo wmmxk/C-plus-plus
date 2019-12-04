@@ -10,4 +10,3 @@ include_directories("${PROJECT_SOURCE_DIR}")
 
 
 add_executable(hello ${PROJECT_SOURCE_DIR}/main.cpp)
-
